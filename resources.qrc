@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>set.png</file>
+        <file>logosmarthome.png</file>
+        <file>door.png</file>
+        <file>logo-hust.png</file>
+        <file>livingroom.png</file>
+        <file>kitchen.png</file>
+        <file>garden.png</file>
+        <file>bedroom.png</file>
+    </qresource>
+    <qresource prefix="/styleSheet">
+        <file>Gravira.qss</file>
+        <file>SpyBot.qss</file>
+        <file>Toolery.qss</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>C:/Users/maith/OneDrive/Máy tính/sundata.qrc</file>
+    </qresource>
+</RCC>
