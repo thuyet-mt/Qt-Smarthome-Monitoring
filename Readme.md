@@ -1,2 +1,1 @@
-# Smarthome_test
- Smarthome_test 
+# Qt-Smarthome-Monitoring
