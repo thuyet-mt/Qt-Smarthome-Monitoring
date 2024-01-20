@@ -25,30 +25,15 @@ tempChartForm::tempChartForm(QWidget *parent)
         series->append(xValue.toMSecsSinceEpoch(), yValue);
     }
 
-
-
-
-    // QChart *chart = new QChart();
-    // chart->addSeries(series);
-    // chart->createDefaultAxes();
-
-    // chart->setAnimationOptions(QChart::AnimationOption::SeriesAnimations);
-    // chart->setTheme(QChart::ChartTheme::ChartThemeDark);
-
-    // chart->legend()->hide();
-    // //chart->legend()->setAlignment(Qt::AlignmentFlag::AlignBottom);
-
-    // QChartView *chartview = new QChartView(chart);
     QChartView *chartView = new QChartView;
     chartView->chart()->addSeries(series);
-    // ...
     QDateTimeAxis *axisX = new QDateTimeAxis;
     axisX->setFormat("dd-MM-yyyy h:mm");
     chartView->chart()->setAxisX(axisX, series);
 
     QValueAxis *axisY = new QValueAxis;
     chartView->chart()->setAxisY(axisY, series);
-    chartView->chart()->setTitle("Line Chart Example");
+    chartView->chart()->setTitle("Temperature Line Chart");
     chartView->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
     chartView->setRenderHint(QPainter::Antialiasing);
     chartView->setParent(ui->horizontalFrame1);

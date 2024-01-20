@@ -2,7 +2,16 @@
 #define CO2CHARTFORM_H
 
 #include <QWidget>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include "main.h"
 
+#include<QtCharts>
+#include<QChartView>
+#include<QLineSeries>
+
+#include <QtSql>
+#include <QHBoxLayout> // Include this for layout management
 namespace Ui {
 class co2ChartForm;
 }
@@ -17,6 +26,7 @@ public:
 
 private:
     Ui::co2ChartForm *ui;
+    QSqlDatabase m_db;
 };
 
 #endif // CO2CHARTFORM_H

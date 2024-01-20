@@ -99,7 +99,7 @@ void bedroomForm::on_pushButton_lamp_clicked()
     }
 
     // Publish the new lamp state to the MQTT topic
-    publishToMqtt("esp/bedroom/lamp", QString::number(lampState));
+    publishToMqtt("esp/lamp", (lampState)?"true":"false");
 
 }
 void bedroomForm::publishToMqtt(const QString &topic, const QString &message){
